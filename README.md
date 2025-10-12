@@ -105,5 +105,6 @@ A passionate learner building AI and software projects while studying Remote Sen
 You can connect with me on GitHub
  or follow my learning journey on X (Twitter).
 
- ![App Screenshot](screenshot.png)
+ <img width="1600" height="900" alt="screenshot" src="https://github.com/user-attachments/assets/1cdc05fc-dec1-41cd-9155-ea5ac9cf4ff0" />
+
 
