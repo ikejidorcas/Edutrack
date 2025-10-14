@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a4633507fff99d03d678e84fb2122acb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a4633507fff99d03d678e84fb2122acb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a4633507fff99d03d678e84fb2122acb = L.map(
+                "map_a4633507fff99d03d678e84fb2122acb",
+                {
+                    center: [9.082, 8.6753],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_89b384400fb0f627169ee1097ef71731 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_89b384400fb0f627169ee1097ef71731.addTo(map_a4633507fff99d03d678e84fb2122acb);
+        
+    
+
+        function geo_json_69927e7370ec53624f0a661155b13011_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_69927e7370ec53624f0a661155b13011 = L.geoJson(null, {
+                onEachFeature: geo_json_69927e7370ec53624f0a661155b13011_onEachFeature,
+            
+            ...{
+}
+        });
+
+        function geo_json_69927e7370ec53624f0a661155b13011_add (data) {
+            geo_json_69927e7370ec53624f0a661155b13011
+                .addData(data);
+        }
+            geo_json_69927e7370ec53624f0a661155b13011_add({"features": [{"geometry": {"coordinates": [7.524724, 5.43089], "type": "point"}, "properties": {"capital": "Umuahia", "state": "Abia"}, "type": "Feature"}, {"geometry": {"coordinates": [12.438058, 9.325049], "type": "point"}, "properties": {"capital": "Yola", "state": "Adamawa"}, "type": "Feature"}, {"geometry": {"coordinates": [7.872159, 4.929986], "type": "point"}, "properties": {"capital": "Uyo", "state": "Akwa Ibom"}, "type": "Feature"}, {"geometry": {"coordinates": [7.006839, 6.275765], "type": "point"}, "properties": {"capital": "Awka", "state": "Anambra"}, "type": "Feature"}, {"geometry": {"coordinates": [9.844166, 10.31583], "type": "point"}, "properties": {"capital": "Bauchi", "state": "Bauchi"}, "type": "Feature"}, {"geometry": {"coordinates": [5.898713, 4.867776], "type": "point"}, "properties": {"capital": "Yenagoa", "state": "Bayelsa"}, "type": "Feature"}, {"geometry": {"coordinates": [8.836275, 7.35082], "type": "point"}, "properties": {"capital": "Makurdi", "state": "Benue"}, "type": "Feature"}, {"geometry": {"coordinates": [12.978912, 11.509747], "type": "point"}, "properties": {"capital": "Maiduguri", "state": "Borno"}, "type": "Feature"}, {"geometry": {"coordinates": [8.660056, 6.167031], "type": "point"}, "properties": {"capital": "Calabar", "state": "Cross River"}, "type": "Feature"}, {"geometry": {"coordinates": [5.898713, 5.532462], "type": "point"}, "properties": {"capital": "Asaba", "state": "Delta"}, "type": "Feature"}, {"geometry": {"coordinates": [7.959286, 6.17797], "type": "point"}, "properties": {"capital": "Abakaliki", "state": "Ebonyi"}, "type": "Feature"}, {"geometry": {"coordinates": [7.510332, 6.452667], "type": "point"}, "properties": {"capital": "Enugu", "state": "Enugu"}, "type": "Feature"}, {"geometry": {"coordinates": [5.898713, 6.54381], "type": "point"}, "properties": {"capital": "Benin city", "state": "Edo"}, "type": "Feature"}, {"geometry": {"coordinates": [5.31025, 7.665581], "type": "point"}, "properties": {"capital": "Ado Ekiti", "state": "Ekiti"}, "type": "Feature"}, {"geometry": {"coordinates": [7.179025, 8.855683], "type": "point"}, "properties": {"capital": "Abuja", "state": "FCT-Abuja"}, "type": "Feature"}, {"geometry": {"coordinates": [11.16666, 10.283333], "type": "point"}, "properties": {"capital": "Gombe", "state": "Gombe"}, "type": "Feature"}, {"geometry": {"coordinates": [6.920913, 5.521453], "type": "point"}, "properties": {"capital": "Owerri", "state": "Imo"}, "type": "Feature"}, {"geometry": {"coordinates": [8.940058, 12.570031], "type": "point"}, "properties": {"capital": "Dutse", "state": "Jigawa"}, "type": "Feature"}, {"geometry": {"coordinates": [7.433332, 10.516667], "type": "point"}, "properties": {"capital": "Kaduna", "state": "Kaduna"}, "type": "Feature"}, {"geometry": {"coordinates": [8.591956, 12.002179], "type": "point"}, "properties": {"capital": "Kano", "state": "Kano"}, "type": "Feature"}, {"geometry": {"coordinates": [7.6, 12.983333], "type": "point"}, "properties": {"capital": "Katsina", "state": "Katsina"}, "type": "Feature"}, {"geometry": {"coordinates": [4.069545, 11.678124], "type": "point"}, "properties": {"capital": "Birnin Kebbi", "state": "Kebbi"}, "type": "Feature"}, {"geometry": {"coordinates": [6.578338, 7.561891], "type": "point"}, "properties": {"capital": "Lokoja", "state": "Kogi"}, "type": "Feature"}, {"geometry": {"coordinates": [4.5624426, 8.984799], "type": "point"}, "properties": {"capital": "Ilorin", "state": "Kwara"}, "type": "Feature"}, {"geometry": {"coordinates": [3.379205, 6.524379], "type": "point"}, "properties": {"capital": "Ikeja", "state": "Lagos"}, "type": "Feature"}, {"geometry": {"coordinates": [8.308844, 8.570515], "type": "point"}, "properties": {"capital": "Lafia", "state": "Nasarawa"}, "type": "Feature"}, {"geometry": {"coordinates": [8.675277, 9.081999], "type": "point"}, "properties": {"capital": "Minna", "state": "Niger"}, "type": "Feature"}, {"geometry": {"coordinates": [3.258362, 6.909833], "type": "point"}, "properties": {"capital": "Abeokuta", "state": "Ogun"}, "type": "Feature"}, {"geometry": {"coordinates": [4.833333, 7.083333], "type": "point"}, "properties": {"capital": "Akure", "state": "Ondo"}, "type": "Feature"}, {"geometry": {"coordinates": [4.562442, 7.587584], "type": "point"}, "properties": {"capital": "Osogbo", "state": "Osun"}, "type": "Feature"}, {"geometry": {"coordinates": [3.933, 7.85], "type": "point"}, "properties": {"capital": "Ibadan", "state": "Oyo"}, "type": "Feature"}, {"geometry": {"coordinates": [9.8965, 8.8583], "type": "point"}, "properties": {"capital": "Jos", "state": "Plateau"}, "type": "Feature"}, {"geometry": {"coordinates": [6.920913, 4.858076], "type": "point"}, "properties": {"capital": "Port-harcout", "state": "Rivers"}, "type": "Feature"}, {"geometry": {"coordinates": [5.233333, 13.066667], "type": "point"}, "properties": {"capital": "Sokoto", "state": "Sokoto"}, "type": "Feature"}, {"geometry": {"coordinates": [10.9807, 7.986875], "type": "point"}, "properties": {"capital": "Jalingo", "state": "Taraba"}, "type": "Feature"}, {"geometry": {"coordinates": [11.706829, 12.187141], "type": "point"}, "properties": {"capital": "Damaturu", "state": "Yobe"}, "type": "Feature"}, {"geometry": {"coordinates": [6.2375947, 12.184415], "type": "point"}, "properties": {"capital": "Gusau", "state": "Zamfara"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_69927e7370ec53624f0a661155b13011.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+    geo_json_69927e7370ec53624f0a661155b13011.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["state", "capital"];
+    let aliases = ["State:", "Capital:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+            geo_json_69927e7370ec53624f0a661155b13011.addTo(map_a4633507fff99d03d678e84fb2122acb);
+        
+</script>
+</html>
